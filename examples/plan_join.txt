@@ -1,0 +1,6 @@
+Hash Join  (cost=29.50..1963.98 rows=10044 width=21)
+  Hash Cond: (o.customer_id = c.customer_id)
+  ->  Seq Scan on orders o  (cost=0.00..1908.00 rows=10044 width=13)
+        Filter: (amount > '550'::numeric)
+  ->  Hash  (cost=17.00..17.00 rows=1000 width=16)
+        ->  Seq Scan on customers c  (cost=0.00..17.00 rows=1000 width=16)

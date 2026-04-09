@@ -1,0 +1,5 @@
+Sort  (cost=2408.04..2408.04 rows=2 width=45)
+  Sort Key: status
+  ->  HashAggregate  (cost=2408.00..2408.03 rows=2 width=45)
+        Group Key: status
+        ->  Seq Scan on orders  (cost=0.00..1658.00 rows=100000 width=10)

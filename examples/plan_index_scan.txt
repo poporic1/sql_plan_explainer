@@ -1,0 +1,2 @@
+Index Scan using orders_pkey on orders  (cost=0.29..8.31 rows=1 width=22)
+  Index Cond: (order_id = 50000)
